@@ -6,7 +6,7 @@ require_relative "map_controler"
 class GameWindow < Gosu::Window
 	attr_reader :calle
 	def initialize
-		super 1024, 768, false
+		super 1024, 769, false
 		self.caption = "Flappy Calle"
 		@calle = Player.new(self)
 		@map_controler = MapControler.new(self)
